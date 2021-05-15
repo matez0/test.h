@@ -59,9 +59,9 @@ In this case, the zero exit status means that the test case passed.
 Run all tests:
 ```
 $ ./test_example --all
-test.h:this_will_pass: PASS
+test_example.c:this_will_pass: PASS
 test_example: test_example.c:23: this_will_fail: Assertion `0 == 1' failed.
-test.h:this_will_fail: FAIL
-test.h:this_will_pass_again: PASS
+test_example.c:this_will_fail: FAIL
+test_example.c:this_will_pass_again: PASS
 ```
 If all test cases passed, the exit status will be zero.

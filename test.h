@@ -26,7 +26,7 @@ int __test_h_run_test_case_in_separate_process(const char *path, const char *tes
 
     const int result = system(command_line);
 
-    printf(__FILE__ ":%s: %s\n", test_case, result ? "FAIL" : "PASS");
+    printf(__BASE_FILE__ ":%s: %s\n", test_case, result ? "FAIL" : "PASS");
 
     return result;
 }
